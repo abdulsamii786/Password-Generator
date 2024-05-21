@@ -1,0 +1,75 @@
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto-Regular;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e3f2fd;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #ffffff88;
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
+  min-height: 200px;
+}
+
+input {
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid;
+  margin: 10px;
+  background-color: transparent;
+  width: 100%;
+}
+button {
+  padding: 12.5px 30px;
+  border: 0;
+  border-radius: 100px;
+  background-color: #2ba8fb;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #6fc5ff;
+  box-shadow: 0 0 20px #6fc5ff50;
+  transform: scale(1.1);
+}
+
+button:active {
+  background-color: #3d94cf;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
+}
+#error {
+  color: red;
+}
+input,
+p,
+h2 {
+  margin: 5px;
+}
+h4 {
+  font-weight: 500;
+}
