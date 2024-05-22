@@ -13,7 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #e3f2fd;
+  background-color: #0a3d62;
 }
 .main {
   display: flex;
@@ -26,17 +26,43 @@ body {
   border-top-left-radius: 30px;
   min-height: 200px;
 }
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: ;
+}
+.input-container .copy {
+  position: absolute;
+  right: 10px;
+  border-radius: 10%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 999999;
+}
 
 input {
-  padding: 10px;
+  padding: 20px;
   outline: none;
   border: none;
-  border-bottom: 1px solid;
+  border-radius: 50px;
   margin: 10px;
-  background-color: transparent;
+  background-color: #000;
   width: 100%;
+  color: #fff;
 }
-button {
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.generate {
   padding: 12.5px 30px;
   border: 0;
   border-radius: 100px;
@@ -49,13 +75,13 @@ button {
   margin-top: 10px;
 }
 
-button:hover {
+.generate:hover {
   background-color: #6fc5ff;
   box-shadow: 0 0 20px #6fc5ff50;
   transform: scale(1.1);
 }
 
-button:active {
+.generate:active {
   background-color: #3d94cf;
   transition: all 0.25s;
   -webkit-transition: all 0.25s;
@@ -67,9 +93,10 @@ button:active {
 }
 input,
 p,
-h2 {
+h1 {
   margin: 5px;
+  color: #fff;
 }
-h4 {
-  font-weight: 500;
+#copy-password {
+  color: #ffffff;
 }

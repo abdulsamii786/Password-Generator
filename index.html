@@ -5,16 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Password Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="main">
-        <h2>Random Password Generator</h2>
-        <input id="get-length" type="number" placeholder="Enter password length">
+        <h1>Random Password Generator</h1>
+        <div class="input-container">
+            <input id="get-length" type="number" placeholder="Enter password length (Optional)">
+            <a class="copy" onclick="copyPassword()"><i class="fa-solid fa-copy"></i></a>
+        </div>
+        <p id="copy-password"></p>
         <p id="error"></p>
-        <h4 id="get-password"></h4>
-        <button onclick="randomPassword()">Generate Password</button>
+
+        <h3 id="get-password"></h3>
+        <button class="generate" onclick="randomPassword()">Generate Password</button>
     </div>
     <script src="app.js"></script>
 
